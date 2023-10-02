@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     font-size: 1rem;
+    overflow-x: hidden;
 }
 
 header {
@@ -40,7 +41,6 @@ section {
     padding: 20px;
     background-color: white;
     font-size: 1.56rem;
-    padding-left: 45px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -54,11 +54,12 @@ section.about-section {
     color: white;
     padding-top: 70px;
     padding-bottom: 20px;
+    box-sizing: border-box;
 }
 
 section.about-section .about-text {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 40px;
     padding-top: 65px;
     padding-bottom: 65px;
 }
@@ -119,6 +120,43 @@ section.candidates-section {
     padding-bottom: 100px;
 }
 
+section.faq-section {
+    background-color: #3756ee;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card {
+    color: #3756ee;
+}
+
+.btn {
+    font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 769px) {
+    .btn {
+        font-size: 16px;
+    }
+}
+
+.btn {
+    white-space: normal;
+}
+
+.btn {
+    height: auto;
+    padding: 10px;  /* Установите отступы, чтобы обеспечить достаточно места для текста */
+}
+
+
 
 @media (max-width: 1200px) {
     section {
@@ -142,15 +180,4 @@ section.candidates-section {
     section {
         font-size: 0.8rem;
     }
-}
-
-section.faq-section {
-    background-color: #3756ee;
-    color: white;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.card {
-    color: #3756ee;
 }
