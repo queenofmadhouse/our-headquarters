@@ -1,13 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto Thin", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    font-size: 1rem;
 }
 
 header {
     background-color: white;
-    /*padding: 20px;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,6 +15,8 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .logo img {
@@ -26,15 +28,124 @@ header {
     color: #3756ee;
     text-decoration: none;
     margin: 0 10px;
-}
-
-.navigation a:hover {
+    padding-right: 70px;
 }
 
 main {
-    /*padding: 20px;*/
-    padding-top: 300px;
-    background-color: white;
-    margin: 20px;
-    border-radius: 10px;
+    margin-top: 80px; /* Высота header плюс некоторый отступ */
 }
+
+section {
+
+    padding: 20px;
+    background-color: white;
+    font-size: 1.56rem;
+    padding-left: 45px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section.about-section {
+    min-height: calc(100vh - 165px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Выравнивание содержимого по вертикали */
+    background-color: #3756ee;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+section.about-section .about-text {
+    flex: 1;
+    margin-right: 20px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+section.about-section .about-video {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+section.team-section {
+    font-size: 1rem;
+    color: #3756ee;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+section.team-section h2 {
+    padding-bottom: 65px;
+}
+
+.team-member .image-wrapper {
+    width: 175px;
+    height: 175px;
+    border: 2px solid #3756ee;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team-member p {
+    padding-top: 20px;
+    text-align: center;
+}
+
+section.volunteer-section {
+    font-size: 1rem;
+    color: white;
+    background-color: #3756ee;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+section.candidates-section {
+
+    font-size: 1rem;
+    color: #3756ee;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+@media (max-width: 1200px) {
+    section {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    section {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        font-size: 0.8rem;
+    }
+}
+
+section.faq-section {
+    background-color: aquamarine;
+}
+
+/* Остальные стили */
