@@ -32,7 +32,7 @@ header {
 }
 
 main {
-    margin-top: 80px; /* Высота header плюс некоторый отступ */
+    margin-top: 80px;
 }
 
 section {
@@ -49,7 +49,7 @@ section.about-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; /* Выравнивание содержимого по вертикали */
+    align-items: center;
     background-color: #3756ee;
     color: white;
     padding-top: 70px;
@@ -145,7 +145,12 @@ section.candidates-section {
 }
 
 section.faq-section {
-    background-color: aquamarine;
+    background-color: #3756ee;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-/* Остальные стили */
+.card {
+    color: #3756ee;
+}
