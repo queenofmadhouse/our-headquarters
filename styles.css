@@ -177,6 +177,10 @@ section.faq-section {
     padding: 10px;
 }
 
+.volunteer-form {
+    background-color: #3756ee;
+}
+
 @media (max-width: 768px) {
     .btn {
         font-size: 12px;
