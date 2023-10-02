@@ -40,7 +40,6 @@ section {
 
     padding: 20px;
     background-color: white;
-    font-size: 1.56rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -62,6 +61,7 @@ section.about-section .about-text {
     margin-right: 40px;
     padding-top: 65px;
     padding-bottom: 65px;
+    font-size: 1.56rem;
 }
 
 section.about-section .about-video {
@@ -74,7 +74,7 @@ section.about-section .about-video {
 }
 
 section.team-section {
-    font-size: 1rem;
+    font-size: 1.56rem;
     color: #3756ee;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -105,7 +105,7 @@ section.team-section h2 {
 }
 
 section.volunteer-section {
-    font-size: 1rem;
+    font-size: 1.56rem;
     color: white;
     background-color: #3756ee;
     padding-top: 100px;
@@ -114,7 +114,7 @@ section.volunteer-section {
 
 section.candidates-section {
 
-    font-size: 1rem;
+    font-size: 1.56rem;
     color: #3756ee;
     padding-top: 100px;
     padding-bottom: 100px;
