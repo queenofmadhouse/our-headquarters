@@ -32,6 +32,10 @@ header {
     padding-right: 70px;
 }
 
+a {
+    cursor: pointer;
+}
+
 main {
     margin-top: 80px;
 }

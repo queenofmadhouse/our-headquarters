@@ -16,3 +16,9 @@
         height: 3000px;
     }
 }
+
+@media (min-width: 768px) {
+    .google-form {
+        height: 2200px;
+    }
+}
