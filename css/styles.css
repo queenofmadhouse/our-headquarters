@@ -7,34 +7,23 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    padding: 10px 20px;
+.navbar {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.logo img {
-    width: 150px;
+.navbar-brand img {
     height: auto;
 }
 
-.navigation a {
-    color: #3756ee;
-    text-decoration: none;
-    margin: 0 10px;
-    padding-right: 70px;
+.navbar-nav .nav-link {
+    color: #3756ee !important;  /* Используйте !important, чтобы переопределить стандартные стили Bootstrap */
+    padding: 20px !important;
 }
 
 a {
     cursor: pointer;
 }
+
 
 main {
     margin-top: 80px;
@@ -191,6 +180,17 @@ h2, h3 {
 
 .bold-text {
     font-weight: bold;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1020;
 }
 
 @media (max-width: 768px) {
