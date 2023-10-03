@@ -54,7 +54,7 @@ section.about-section .about-text {
     margin-right: 40px;
     padding-top: 65px;
     padding-bottom: 65px;
-    font-size: 1.56rem;
+    font-size: 1.2rem;
 }
 
 section.about-section .about-video {
@@ -98,7 +98,7 @@ section.team-section h2 {
 }
 
 section.volunteer-section {
-    font-size: 1.56rem;
+    font-size: 1.2rem;
     color: white;
     background-color: #2d57c8;
     padding-top: 100px;
@@ -107,7 +107,7 @@ section.volunteer-section {
 
 section.candidates-section {
 
-    font-size: 1.56rem;
+    font-size: 1.2rem;
     color: #2d57c8;
     padding-top: 100px;
     padding-bottom: 100px;
