@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://michu2k.github.io/Accordion/css/accordion.min.css">
     <link rel="icon" href="images/logo/logo.ico" type="image/x-icon" sizes="128x128">
     <script src="https://michu2k.github.io/Accordion/js/accordion.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <title>Наш Штаб</title>
@@ -446,6 +445,37 @@
         </div>
     </div>
 </footer>
+
+<div id="overlay" class="overlay"></div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+        var menuOpen = false;
+
+        $('.navbar-toggler').on('click', function() {
+            menuOpen = !menuOpen;
+            if (menuOpen) {
+                $('#navbarNav').collapse('show');
+                $('#overlay').fadeIn();
+            } else {
+                $('#navbarNav').collapse('hide');
+                $('#overlay').fadeOut();
+            }
+        });
+
+        $('#overlay').on('click', function() {
+            menuOpen = false;
+            $('#navbarNav').collapse('hide');
+            $('#overlay').fadeOut();
+        });
+    });
+</script>
+
 </body>
 <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function () {
