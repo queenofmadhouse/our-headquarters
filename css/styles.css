@@ -181,6 +181,14 @@ section.faq-section {
     background-color: #3756ee;
 }
 
+h2, h3 {
+    font-weight: bold;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .btn {
         font-size: 12px;
