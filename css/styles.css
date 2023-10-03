@@ -2,7 +2,7 @@ body {
     font-family: "Roboto Thin", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f2f2f2;
     font-size: 1rem;
     overflow-x: hidden;
 }
@@ -16,7 +16,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: #3756ee !important;  /* Используйте !important, чтобы переопределить стандартные стили Bootstrap */
+    color: #2d57c8 !important;
     padding: 20px !important;
 }
 
@@ -32,7 +32,7 @@ main {
 section {
 
     padding: 20px;
-    background-color: white;
+    background-color: #f2f2f2;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -42,7 +42,7 @@ section.about-section {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #3756ee;
+    background-color: #2d57c8;
     color: white;
     padding-top: 70px;
     padding-bottom: 20px;
@@ -68,7 +68,7 @@ section.about-section .about-video {
 
 section.team-section {
     font-size: 1rem;
-    color: #3756ee;
+    color: #2d57c8;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -80,7 +80,7 @@ section.team-section h2 {
 .team-member .image-wrapper {
     width: 175px;
     height: 175px;
-    border: 2px solid #3756ee;
+    border: 2px solid #2d57c8;
     border-radius: 50%;
     overflow: hidden;
     margin: auto;
@@ -100,7 +100,7 @@ section.team-section h2 {
 section.volunteer-section {
     font-size: 1.56rem;
     color: white;
-    background-color: #3756ee;
+    background-color: #2d57c8;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -108,20 +108,20 @@ section.volunteer-section {
 section.candidates-section {
 
     font-size: 1.56rem;
-    color: #3756ee;
+    color: #2d57c8;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
 section.faq-section {
-    background-color: #3756ee;
+    background-color: #2d57c8;
     color: white;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
 .card {
-    color: #3756ee;
+    color: #2d57c8;
 }
 
 .btn {
@@ -130,7 +130,7 @@ section.faq-section {
 
 .footer {
     background-color: white;
-    color: #3756ee;
+    color: #2d57c8;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -171,7 +171,7 @@ section.faq-section {
 }
 
 .volunteer-form {
-    background-color: #3756ee;
+    background-color: #2d57c8;
 }
 
 h2, h3 {
