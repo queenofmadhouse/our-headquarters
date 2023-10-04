@@ -1,0 +1,12 @@
+.declaration-section {
+    min-height: calc(100vh - 170px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d57c8;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}

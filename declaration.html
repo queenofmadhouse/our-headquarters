@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/volunteers_form.css">
+    <link rel="stylesheet" href="css/declaration.css">
     <link rel="stylesheet" href="https://michu2k.github.io/Accordion/css/accordion.min.css">
     <link rel="icon" href="images/logo/logo.ico" type="image/x-icon" sizes="128x128">
     <script src="https://michu2k.github.io/Accordion/js/accordion.min.js"></script>
@@ -22,7 +22,8 @@
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo/logo.png" alt="Наш Штаб" width="130">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -44,17 +45,53 @@
 </header>
 
 <main>
-    <section class="google-form-section">
+
+    <section class="declaration-section">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeshk5_eqLZqIn4ybSIFca0xgo9sbW8QlehY3epAPnkH26-1w/viewform?embedded=true" frameborder="0">
-                        Загрузка…
-                    </iframe>
+                <div class="col-md-12 col sm-12 col 12 declaration-text">
+                    <h2>
+                        Декларация кандидата
+                    </h2>
+
+                    <p>Заявляя о выдвижении на должность президента Российской Федерации, гарантирую, что выступаю за
+                        немедленное прекращение боевых действий в Украине. Убежден(а), что только демократическое
+                        будущее
+                        нашей
+                        Родины позволит сформировать общество, в котором высшие ценности — права и свободы человека –
+                        будут
+                        гарантированы законом. И главное из них – право на жизнь станет фундаментом возрождения
+                        страны.</p>
+
+                    <p>В случае избрания на должность главы государства, как гарант Конституции Российской Федерации,
+                        прав и
+                        свобод граждан свободной России, обязуюсь незамедлительно принять меры по отмене всех правовых
+                        норм,
+                        принятых в последнее время нынешним правящим режимом и направленных на ущемление законных
+                        интересов
+                        личности. Как следствие, в обязательном порядке будут реабилитированы и выпущены на свободу все
+                        политические заключенные, отменен позорный закон «об иноагентах», возвращено право граждан на
+                        мирный
+                        протест. Как основа демократического общества, по итогам реформ политической и избирательной
+                        систем
+                        будут проведены честные, открытые и свободные выборы всех уровней, включая возрожденное местное
+                        самоуправление.</p>
+
+                    <p>Заявляю, что полностью разделяю базовые положения основных документов международного права:
+                        Устава
+                        ООН,
+                        Всеобщей декларации прав человека, Европейской конвенции о защите прав человека и основных
+                        свобод,
+                        Европейской социальной хартии.</p>
+
+                    <p>Разделяю общие ценности с Нашим Штабом, готов(а) объединять усилия с другими демократическими
+                        кандидатами на этапе сбора подписей избирателей, вместе добиваться поставленных целей и
+                        задач.</p>
                 </div>
             </div>
         </div>
     </section>
+
 </main>
 
 <footer class="footer">
@@ -94,11 +131,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         var menuOpen = false;
 
-        $('.navbar-toggler').on('click', function() {
+        $('.navbar-toggler').on('click', function () {
             menuOpen = !menuOpen;
             if (menuOpen) {
                 $('#navbarNav').collapse('show');
@@ -109,7 +146,7 @@
             }
         });
 
-        $('#overlay').on('click', function() {
+        $('#overlay').on('click', function () {
             menuOpen = false;
             $('#navbarNav').collapse('hide');
             $('#overlay').fadeOut();

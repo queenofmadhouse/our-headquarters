@@ -299,6 +299,15 @@ section.faq-section {
 }
 
 @media (max-width: 768px) {
+    .social-media-list {
+        padding-bottom: 50px !important;
+        justify-content: center;
+    }
+}
+
+/* media for fonts */
+
+@media (max-width: 768px) {
     .btn {
         font-size: 12px;
     }
