@@ -272,6 +272,12 @@ section.faq-section {
     font-size: 2vw;
 }
 
+@media (max-width: 767px) {
+    .btn {
+        text-align: left;
+    }
+}
+
 /* Footer styles */
 
 .footer {
