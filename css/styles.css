@@ -159,12 +159,12 @@ section.volunteer-section {
     transition: background-color 0.3s;
 }
 
-.btn-volunteer:hover {
-    /*background-color: #1a3c7c;*/
-}
-
 /* mobile adaptation */
 @media (max-width: 767px) {
+    .info-for-volunteer-btn {
+        padding-top: 60px !important;
+    }
+
     .btn-volunteer {
         width: 100%;
         margin-bottom: 20px;
@@ -220,6 +220,11 @@ section.candidates-section {
 
 /* mobile adaptation */
 @media (max-width: 767px) {
+
+    .info-for-candidates-btn {
+        padding-top: 60px;
+    }
+
     .btn-candidate {
         width: 100%;
         margin-bottom: 20px;
