@@ -31,6 +31,12 @@
     }
 }
 
+@media (max-width: 420px) {
+    .google-form {
+        height: 3450px !important;
+    }
+}
+
 @media (min-width: 768px) {
     .google-form {
         height: 2900px;

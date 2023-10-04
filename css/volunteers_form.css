@@ -19,21 +19,9 @@
     }
 }
 
-@media (max-width: 576px) {
-    .google-form {
-        height: 2340px !important;
-    }
-}
-
 @media (max-width: 534px) {
     .google-form {
         height: 2380px !important;
-    }
-}
-
-@media (max-width: 521px) {
-    .google-form {
-        height: 2450px !important;
     }
 }
 
