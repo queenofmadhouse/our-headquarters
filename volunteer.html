@@ -55,6 +55,7 @@
     </section>
 </main>
 
+
 <footer class="footer">
     <div class="container">
         <div class="row align-items-center">
@@ -105,23 +106,6 @@
             $('#navbarNav').collapse('hide');
             $('#overlay').fadeOut();
         });
-    });
-</script>
-
-<script type="text/javascript">
-    window.addEventListener('DOMContentLoaded', (event) => {
-        const iframe = document.querySelector('.google-form');
-        const section = document.querySelector('.google-form-section');
-
-        function updateSectionHeight() {
-            const iframeHeight = iframe.contentWindow.document.body.scrollHeight;
-            section.style.minHeight = iframeHeight + 140 + 'px';
-        }
-
-        iframe.onload = updateSectionHeight;
-        window.onresize = updateSectionHeight;
-
-        updateSectionHeight();
     });
 </script>
 
