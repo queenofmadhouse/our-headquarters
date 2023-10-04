@@ -1,3 +1,4 @@
+/* main styles */
 body {
     font-family: "Roboto Thin", sans-serif;
     margin: 0;
@@ -7,17 +8,12 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+h2, h3 {
+    font-weight: bold;
 }
 
-.navbar-brand img {
-    height: auto;
-}
-
-.navbar-nav .nav-link {
-    color: #2d57c8 !important;
-    padding: 20px !important;
+.bold-text {
+    font-weight: bold;
 }
 
 a {
@@ -35,6 +31,34 @@ section {
     background-color: #f2f2f2;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+/* Navigation styles  */
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #2d57c8 !important;
+    padding: 20px !important;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1020;
+}
+
+/* about section */
 
 section.about-section {
     min-height: calc(100vh - 165px);
@@ -65,6 +89,8 @@ section.about-section .about-video {
     position: relative;
     overflow: hidden;
 }
+
+/* team section */
 
 section.team-section {
     font-size: 1rem;
@@ -97,6 +123,8 @@ section.team-section h2 {
     text-align: center;
 }
 
+/* volunteer section */
+
 section.volunteer-section {
     font-size: 1.2rem;
     color: white;
@@ -105,13 +133,107 @@ section.volunteer-section {
     padding-bottom: 100px;
 }
 
-section.candidates-section {
+.volunteer-image {
+    max-width: 100%;
+    height: auto;
+    padding-top: 150px;
+    padding-right: 10px;
+}
 
+.info-for-volunteer-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* button style */
+.btn-volunteer {
+    background-color: #ffffff;
+    color: #2d57c8;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 1.5rem !important;
+    transition: background-color 0.3s;
+}
+
+.btn-volunteer:hover {
+    /*background-color: #1a3c7c;*/
+}
+
+/* mobile adaptation */
+@media (max-width: 767px) {
+    .btn-volunteer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* PC adaptation */
+@media (min-width: 768px) {
+    .btn-volunteer {
+        margin-top: 20px;
+    }
+}
+
+/* candidates section */
+
+section.candidates-section {
     font-size: 1.2rem;
     color: #2d57c8;
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+.candidate-image {
+    max-width: 100%;
+    height: auto;
+    padding-top: 150px;
+    padding-right: 10px;
+}
+
+.info-for-candidates-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* button style */
+.btn-candidate {
+    background-color: #2d57c8;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 1.5rem !important;
+    transition: background-color 0.3s;
+}
+
+/* button hover style */
+.btn-candidate:hover {
+    /*background-color: #1a3c7c;*/
+}
+
+/* mobile adaptation */
+@media (max-width: 767px) {
+    .btn-candidate {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* pc adaptation */
+@media (min-width: 768px) {
+    .btn-candidate {
+        margin-top: 20px;
+    }
+}
+
+/* FAQ section */
 
 section.faq-section {
     background-color: #2d57c8;
@@ -127,6 +249,8 @@ section.faq-section {
 .btn {
     font-size: 2vw;
 }
+
+/* Footer styles */
 
 .footer {
     background-color: white;
@@ -172,25 +296,6 @@ section.faq-section {
 
 .volunteer-form {
     background-color: #2d57c8;
-}
-
-h2, h3 {
-    font-weight: bold;
-}
-
-.bold-text {
-    font-weight: bold;
-}
-
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 1020;
 }
 
 @media (max-width: 768px) {
