@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/volunteers_form.css">
+    <link rel="stylesheet" href="https://michu2k.github.io/Accordion/css/accordion.min.css">
+    <link rel="icon" href="images/logo/logo.ico" type="image/x-icon" sizes="128x128">
+    <script src="https://michu2k.github.io/Accordion/js/accordion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Наш Штаб</title>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/logo.png" alt="Наш Штаб" width="130">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse bold-text" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="volunteer.html">Помогать штабу</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="candidate.html">Выдвигаюсь в президенты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="google-form-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeshk5_eqLZqIn4ybSIFca0xgo9sbW8QlehY3epAPnkH26-1w/viewform?embedded=true" frameborder="0">
+                        Загрузка…
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 col-sm-4 order-md-1 order-sm-2 order-2">
+                <div class="logo">
+                    <img src="images/logo/logo.png" alt="Логотип">
+                </div>
+                <p>© 2023 «Наш Штаб»</p>
+                <p>Контакт для прессы и предложений о сотрудничестве: @shtab_info (Telegram).</p>
+            </div>
+            <div class="col-md-8 col-12 text-md-right order-md-2 order-sm-1 order-1">
+                <ul class="social-media-list">
+                    <li><a href="https://www.instagram.com/shtab2024/" target="_blank" rel="noopener noreferrer"><img
+                            src="images/icons/instagram_logo.svg" alt="Instagram"></a></li>
+                    <li><a href="https://t.me/shtab2024" target="_blank" rel="noopener noreferrer"><img
+                            src="images/icons/telegram_logo.svg" alt="Telegram"></a></li>
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img
+                            src="images/icons/facebook_logo.svg" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/shtab2024" target="_blank" rel="noopener noreferrer"><img
+                            src="images/icons/twitter_logo.svg" alt="Twitter"></a></li>
+                    <li><a href="https://www.tiktok.com/@shtab2024" target="_blank" rel="noopener noreferrer"><img
+                            src="images/icons/tiktok_logo.svg" alt="TikTok"></a></li>
+                    <li><a href="https://youtube.com/@shtab2024" target="_blank" rel="noopener noreferrer"><img
+                            src="images/icons/youtube_logo.svg" alt="YouTube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="overlay" class="overlay"></div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+        var menuOpen = false;
+
+        $('.navbar-toggler').on('click', function() {
+            menuOpen = !menuOpen;
+            if (menuOpen) {
+                $('#navbarNav').collapse('show');
+                $('#overlay').fadeIn();
+            } else {
+                $('#navbarNav').collapse('hide');
+                $('#overlay').fadeOut();
+            }
+        });
+
+        $('#overlay').on('click', function() {
+            menuOpen = false;
+            $('#navbarNav').collapse('hide');
+            $('#overlay').fadeOut();
+        });
+    });
+</script>
+
+</body>
+</html>

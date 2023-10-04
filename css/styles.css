@@ -1,0 +1,372 @@
+/* main styles */
+body {
+    font-family: "Roboto Thin", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+main {
+    margin-top: 80px;
+}
+
+section {
+
+    /*padding: 20px;*/
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Navigation styles  */
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #2d57c8 !important;
+    padding: 20px !important;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1020;
+}
+
+/* about section */
+
+section.about-section {
+    min-height: calc(100vh - 165px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d57c8;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+section.about-section .about-text {
+    flex: 1;
+    margin-right: 40px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    font-size: 1.2rem;
+}
+
+section.about-section .about-video {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* team section */
+
+section.team-section {
+    font-size: 1rem;
+    color: #2d57c8;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+section.team-section h2 {
+    padding-bottom: 65px;
+}
+
+.team-member .image-wrapper {
+    width: 175px;
+    height: 175px;
+    border: 2px solid #2d57c8;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team-member p {
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* volunteer section */
+
+section.volunteer-section {
+    font-size: 1.2rem;
+    color: white;
+    background-color: #2d57c8;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* mobile adaptation */
+@media (max-width: 767px) {
+    .info-for-volunteer-btn {
+        padding-top: 60px !important;
+    }
+
+    .btn-volunteer {
+        width: 100%;
+        font-size: 1.4rem !important;
+        margin-bottom: 20px;
+    }
+
+    /* button style */
+    .btn-volunteer {
+        background-color: #ffffff;
+        color: #2d57c8;
+        border: none;
+        padding: 15px 25px !important;
+        text-align: center;
+        font-size: 2rem !important;
+        transition: background-color 0.3s;
+    }
+}
+
+/* PC adaptation */
+@media (min-width: 768px) {
+    .volunteer-image {
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .info-for-volunteer-btn {
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* button style */
+    .btn-volunteer {
+        background-color: #ffffff;
+        color: #2d57c8;
+        border: none;
+        padding: 15px 25px !important;
+        text-align: center;
+        font-size: 1.5rem !important;
+    }
+}
+
+.btn-volunteer:hover {
+    color: #2348a4 !important;
+    background-color: #ececec;
+}
+
+/* candidates section */
+
+section.candidates-section {
+    font-size: 1.2rem;
+    color: #2d57c8;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* mobile button style*/
+@media (max-width: 767px) {
+
+    .info-for-candidates-btn {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-candidate {
+        background-color: #2d57c8;
+        color: #ffffff;
+        border: none;
+        padding: 15px 25px !important;
+        text-align: center;
+        font-size: 2rem !important;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* desktop button style */
+@media (min-width: 768px) {
+
+    .candidate-image {
+        padding-top: 50px;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .info-for-candidates-btn {
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* button style */
+    .btn-candidate {
+        background-color: #2d57c8;
+        color: #ffffff;
+        border: none;
+        padding: 15px 25px !important;
+        text-align: center;
+        font-size: 1.5rem !important;
+    }
+}
+
+.btn-candidate:hover {
+    color: #ececec !important;
+    background-color: #2348a4;
+}
+
+/* FAQ section */
+
+section.faq-section {
+    background-color: #2d57c8;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card {
+    color: #2d57c8;
+}
+
+.btn {
+    font-size: 2vw;
+}
+
+@media (max-width: 767px) {
+    .btn {
+        text-align: left;
+    }
+}
+
+/* Footer styles */
+
+.footer {
+    background-color: white;
+    color: #2d57c8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer .logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer p {
+    margin: 10px 0 0;
+}
+
+.social-media-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-list li {
+    margin-left: 15px;
+}
+
+.social-media-list li a img {
+    width: 30px;
+    height: auto;
+}
+
+.btn {
+    white-space: normal;
+}
+
+.btn {
+    height: auto;
+    padding: 10px;
+}
+
+.volunteer-form {
+    background-color: #2d57c8;
+}
+
+@media (max-width: 768px) {
+    .social-media-list {
+        padding-bottom: 50px !important;
+        justify-content: center;
+    }
+}
+
+/* media for fonts */
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 769px) {
+    .btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    section {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    section {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        font-size: 0.8rem;
+    }
+}

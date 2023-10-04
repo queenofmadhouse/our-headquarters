@@ -1,0 +1,44 @@
+.google-form-section {
+    padding-top: 100px;
+}
+
+.google-form {
+    width: 100%;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .google-form {
+        height: 3100px !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .google-form {
+        height: 3200px !important;
+    }
+}
+
+@media (max-width: 520px) {
+    .google-form {
+        height: 3300px !important;
+    }
+}
+
+@media (max-width: 490px) {
+    .google-form {
+        height: 3400px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .google-form {
+        height: 3450px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .google-form {
+        height: 2900px;
+    }
+}
