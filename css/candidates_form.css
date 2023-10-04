@@ -7,10 +7,6 @@
     border: none;
 }
 
-.container {
-    padding: 20px;
-}
-
 @media (max-width: 767px) {
     .google-form {
         height: 3100px !important;
