@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/volunteers_form.css">
     <link rel="stylesheet" href="https://michu2k.github.io/Accordion/css/accordion.min.css">
     <link rel="icon" href="images/logo/logo.ico" type="image/x-icon" sizes="128x128">
     <script src="https://michu2k.github.io/Accordion/js/accordion.min.js"></script>
@@ -105,6 +105,23 @@
             $('#navbarNav').collapse('hide');
             $('#overlay').fadeOut();
         });
+    });
+</script>
+
+<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const iframe = document.querySelector('.google-form');
+        const section = document.querySelector('.google-form-section');
+
+        function updateSectionHeight() {
+            const iframeHeight = iframe.contentWindow.document.body.scrollHeight;
+            section.style.minHeight = iframeHeight + 140 + 'px';
+        }
+
+        iframe.onload = updateSectionHeight;
+        window.onresize = updateSectionHeight;
+
+        updateSectionHeight();
     });
 </script>
 

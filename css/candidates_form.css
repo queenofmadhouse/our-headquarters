@@ -1,0 +1,29 @@
+.google-form-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.google-form-section {
+    padding-top: 100px;
+}
+
+.google-form {
+    width: 100%;
+    border: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+@media (max-width: 767px) {
+    .google-form {
+        height: 3200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .google-form {
+        height: 2870px;
+    }
+}
