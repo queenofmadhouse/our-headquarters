@@ -37,6 +37,19 @@
     }
 }
 
+@media (max-width: 391px) {
+    .google-form {
+        height: 3500px !important;
+    }
+}
+
+@media (max-width: 361px) {
+    .google-form {
+        height: 3640px !important;
+    }
+}
+
+
 @media (min-width: 768px) {
     .google-form {
         height: 2900px;

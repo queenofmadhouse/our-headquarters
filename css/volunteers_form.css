@@ -19,9 +19,21 @@
     }
 }
 
-@media (max-width: 534px) {
+@media (max-width: 428px) {
     .google-form {
-        height: 2380px !important;
+        height: 2600px !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .google-form {
+        height: 2680px !important;
+    }
+}
+
+@media (max-width: 361px) {
+    .google-form {
+        height: 2800px !important;
     }
 }
 
