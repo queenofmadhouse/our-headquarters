@@ -137,12 +137,10 @@ section.volunteer-section {
 @media (max-width: 767px) {
     .info-for-volunteer-btn {
         padding-top: 60px !important;
-    }
-
-    .btn-volunteer {
-        width: 100%;
-        font-size: 1.4rem !important;
-        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     /* button style */
@@ -153,7 +151,8 @@ section.volunteer-section {
         padding: 15px 25px !important;
         text-align: center;
         font-size: 2rem !important;
-        transition: background-color 0.3s;
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
@@ -339,10 +338,18 @@ section.faq-section {
     .btn {
         font-size: 12px;
     }
+
+    .btn-conv {
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 769px) {
     .btn {
+        font-size: 16px;
+    }
+
+    .btn-conv {
         font-size: 16px;
     }
 }
