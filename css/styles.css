@@ -20,14 +20,16 @@ a {
     cursor: pointer;
 }
 
-
 main {
     margin-top: 80px;
 }
 
+.btn:hover {
+    text-decoration: none !important;
+}
+
 section {
 
-    /*padding: 20px;*/
     background-color: #f2f2f2;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -137,12 +139,10 @@ section.volunteer-section {
 @media (max-width: 767px) {
     .info-for-volunteer-btn {
         padding-top: 60px !important;
-    }
-
-    .btn-volunteer {
-        width: 100%;
-        font-size: 1.4rem !important;
-        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     /* button style */
@@ -150,10 +150,13 @@ section.volunteer-section {
         background-color: #ffffff;
         color: #2d57c8;
         border: none;
+        border-radius: 5px;
         padding: 15px 25px !important;
         text-align: center;
+        text-decoration: none !important;
         font-size: 2rem !important;
-        transition: background-color 0.3s;
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
@@ -178,8 +181,10 @@ section.volunteer-section {
         background-color: #ffffff;
         color: #2d57c8;
         border: none;
+        border-radius: 5px;
         padding: 15px 25px !important;
         text-align: center;
+        text-decoration: none !important;
         font-size: 1.5rem !important;
     }
 }
@@ -213,8 +218,10 @@ section.candidates-section {
         background-color: #2d57c8;
         color: #ffffff;
         border: none;
+        border-radius: 5px;
         padding: 15px 25px !important;
         text-align: center;
+        text-decoration: none !important;
         font-size: 2rem !important;
         width: 100%;
         margin-bottom: 20px;
@@ -244,8 +251,10 @@ section.candidates-section {
         background-color: #2d57c8;
         color: #ffffff;
         border: none;
+        border-radius: 5px;
         padding: 15px 25px !important;
         text-align: center;
+        text-decoration: none !important;
         font-size: 1.5rem !important;
     }
 }
@@ -270,6 +279,11 @@ section.faq-section {
 
 .btn {
     font-size: 2vw;
+    color: #2d57c8;
+}
+
+.btn:hover {
+    text-decoration: none !important;
 }
 
 @media (max-width: 767px) {
@@ -339,10 +353,18 @@ section.faq-section {
     .btn {
         font-size: 12px;
     }
+
+    .btn-conv {
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 769px) {
     .btn {
+        font-size: 16px;
+    }
+
+    .btn-conv {
         font-size: 16px;
     }
 }
